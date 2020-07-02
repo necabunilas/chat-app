@@ -53,7 +53,7 @@ export default function App() {
       
   },[])
 
-  if(loggedState === true){
+  if(loggedState){
     return <Chat username={user}
                  sendData={sendData}
                  messages={messages}
