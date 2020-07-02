@@ -6,7 +6,7 @@ export default function Header(props){
         <div>
             <div>
                 <h1>Chat App</h1>
-                {props.username === "" ? null : <Button disconnect={props.disconnect}/>}
+                {props.username && <Button disconnect={props.disconnect}/>}
             </div>
             <hr />
         </div>
